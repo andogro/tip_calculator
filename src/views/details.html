@@ -1,0 +1,25 @@
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-md-offset-4">
+        <h3>Enter details for Meal {{ number + 1}}:</h3>
+        <form name="taxForm" ng-submit="formSubmit()">
+          <fieldset class="form-group">
+            <label for="mealprice">Base Meal Price</label>
+            <input type="number" step=".01" class="form-control" id="mealprice" placeholder="Meal Price" ng-model="meal.price">
+          </fieldset>
+          <fieldset class="form-group">
+            <label for="tiptax">Tax Rate %</label>
+            <input type="number" step=".01" class="form-control" id="tiptax" placeholder="Tip Tax" ng-model="meal.tax">
+          </fieldset>
+          <fieldset class="form-group">
+            <label for="tippercent">Tip Percentage %</label>
+            <input type="number" step=".01" class="form-control" id="tippercent" placeholder="Tip %" ng-model="meal.tip">
+          </fieldset>
+            <input type="submit" value="Add Meal">
+            <input type="button" value="Cancel">
+        </form>
+      </div>
+    </div>
+   </div>
+  
+

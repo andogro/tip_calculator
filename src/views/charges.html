@@ -1,0 +1,19 @@
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-md-offset-4">
+        <input type="button" value="Previous Meal">
+        <input type="button" value="Next Meal">
+          <div ng-repeat="meal in meals track by $index" ng-show="$index">
+            
+            <h2>Overview for Meal: {{$index + 1}}</h2>
+            <br><br>
+            <p><strong>Subtotal:</strong> {{meal.subtotal | currency }} </p> 
+            <p><strong>Tip:</strong> {{meal.tipamount | currency}}</p>
+            <hr />
+            <p><strong>Total:</strong> {{meal.total | currency}} </p>
+          
+          </div>
+      </div>
+    </div>
+  </div>
+ 
